@@ -67,7 +67,7 @@ function divide(x, y) {
 }
 
 function sonIguales(x, y) {
-  if (x==y) {
+  if (x=y) {
     return true
   } return false 
   // Devuelve "true" si "x" e "y" son iguales
