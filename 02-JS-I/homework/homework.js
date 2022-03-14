@@ -43,24 +43,33 @@ function suma(x, y) {
 }
 
 function resta(x, y) {
+  var r= x-y
+  return r
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   
 }
 
 function multiplica(x, y) {
+  var multi= x*y
+  return multi
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   
 }
 
 function divide(x, y) {
+  var div= x/y
+  return div
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   
 }
 
 function sonIguales(x, y) {
+  if (x==y) {
+    return true
+  } return false 
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
