@@ -34,11 +34,12 @@ function devolverString(nombre) {
 }
 
 function suma(x, y) {
+  var res= x+y
+  return res
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var res= x+y
-  return res
+
 }
 
 function resta(x, y) {
