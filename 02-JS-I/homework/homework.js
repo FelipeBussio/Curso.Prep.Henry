@@ -7,7 +7,7 @@ const nuevaString = 'hola';
 const nuevoNum = 34 ;
 
 // Crea una variable booleana:
-const nuevoBool = 'true';
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -67,7 +67,7 @@ function divide(x, y) {
 }
 
 function sonIguales(x, y) {
-  if (x=y) {
+  if (x==y) {
     return true
   } return false 
   // Devuelve "true" si "x" e "y" son iguales
@@ -77,6 +77,9 @@ function sonIguales(x, y) {
 }
 
 function tienenMismaLongitud(str1, str2) {
+  if (str1.length==str2.length){
+    return true
+  } return false
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
