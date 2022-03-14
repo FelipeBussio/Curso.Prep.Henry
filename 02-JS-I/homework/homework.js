@@ -87,6 +87,9 @@ function tienenMismaLongitud(str1, str2) {
 }
 
 function menosQueNoventa(num) {
+  if (num<90){
+    return true
+  } return false
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -94,6 +97,9 @@ function menosQueNoventa(num) {
 }
 
 function mayorQueCincuenta(num) {
+  if(num>50){ 
+    return true
+  } return false
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -101,6 +107,8 @@ function mayorQueCincuenta(num) {
 }
 
 function obtenerResto(x, y) {
+  var resto= x%y
+  return resto
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
   
