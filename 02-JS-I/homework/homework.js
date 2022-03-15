@@ -136,7 +136,8 @@ function elevarAlCuadrado(num) {
 }
 
 function elevarAlCubo(num) {
-  Math.pow(num,3)
+  var cub= num^2
+  return cub
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   
