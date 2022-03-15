@@ -164,18 +164,24 @@ function redondearNumero(num) {
 }
 
 function redondearHaciaArriba(num) {
+  return Math.ceil(num)
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   
 }
 
 function numeroRandom() {
+  return Math.random(1,0)
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   
 }
 
 function esPositivo(numero) {
+  if (numero%2===0) {
+    return 'es positivo'
+  
+  } return 'es negativo'
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
@@ -184,6 +190,7 @@ function esPositivo(numero) {
 }
 
 function agregarSimboloExclamacion(str) {
+  return str + '!'
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
