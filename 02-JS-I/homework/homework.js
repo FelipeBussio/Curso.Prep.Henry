@@ -143,6 +143,7 @@ function elevarAlCubo(num) {
 }
 
 function elevar(num, exponent) {
+  Math.pow(num,exponente)
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   
