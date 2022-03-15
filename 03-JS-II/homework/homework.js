@@ -1,7 +1,18 @@
 // No cambies los nombres de las funciones.
 
 function obtenerMayor(x, y) {
-  // "x" e "y" son números enteros (int).
+  if (x>y);{
+    return x
+
+}
+else if (x<y){
+  return y{
+
+}
+else if(x===y){
+  return x||y
+}
+// "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
