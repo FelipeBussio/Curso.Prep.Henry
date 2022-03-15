@@ -115,6 +115,9 @@ function obtenerResto(x, y) {
 }
 
 function esPar(num) {
+  if (num%2 ===0){
+    return true
+  } return false
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -122,6 +125,9 @@ function esPar(num) {
 }
 
 function esImpar(num) {
+  if (num%2 ===1){
+    return true
+  } return false
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -129,7 +135,7 @@ function esImpar(num) {
 }
 
 function elevarAlCuadrado(num) {
-  Math.pow(num,2)
+  return Math.pow(num,2)
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
@@ -137,20 +143,21 @@ function elevarAlCuadrado(num) {
 }
 
 function elevarAlCubo(num) {
+  return Math.pow(num,3)
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   
 }
 
 function elevar(num, exponent) {
-  Math.pow(num,exponente)
+  return Math.pow(num,exponent)
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
 
 }
 
 function redondearNumero(num) {
-  Math.round(num)
+  return Math.round(num)
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
   
