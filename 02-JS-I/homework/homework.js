@@ -146,10 +146,11 @@ function elevar(num, exponent) {
   Math.pow(num,exponente)
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+
 }
 
 function redondearNumero(num) {
+  Math.round(num)
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
   
