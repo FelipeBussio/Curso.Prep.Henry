@@ -178,15 +178,14 @@ function numeroRandom() {
 }
 
 function esPositivo(numero) {
-  if (numero===0) {
-    return false
-  
+  if(numero === 0) {
+    return false;
   }
-  else if (numero>0){
-    return 'es positivo'
+  else if(numero > 0) {
+    return "Es positivo";
   }
   else {
-    'es negativo'
+    return "Es negativo";
   }
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
