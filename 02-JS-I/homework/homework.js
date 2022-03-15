@@ -129,6 +129,7 @@ function esImpar(num) {
 }
 
 function elevarAlCuadrado(num) {
+  Math.pow(num,2)
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
@@ -136,8 +137,6 @@ function elevarAlCuadrado(num) {
 }
 
 function elevarAlCubo(num) {
-  var cub= num^3
-  return cub
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   
