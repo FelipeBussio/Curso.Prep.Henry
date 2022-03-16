@@ -167,7 +167,7 @@ function esPrimo(numero) {
 if (numero%numero===0 && numero%1===0){
   return true
 }
-return false
+return 'falso'
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
@@ -176,7 +176,7 @@ return false
 }
 
 function esVerdadero(valor){
-  if (valor===10){
+  if (valor+2==10){
     return 'Soy verdadero'
   }
   return 'Soy falso'
@@ -186,7 +186,12 @@ function esVerdadero(valor){
 
 }
 
-function tablaDelSeis(i){
+function tablaDelSeis(){
+  var array=[]
+  for (var i=0; i<11 ; i++){
+   array.push(i*6)
+  }
+  return array
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
@@ -194,7 +199,7 @@ function tablaDelSeis(i){
 }
 
 function tieneTresDigitos(numero){
-  if (numero.length=3){
+  if (numero.length===3){
     return true
   }
   return false
@@ -204,11 +209,14 @@ function tieneTresDigitos(numero){
 }
 
 function doWhile(numero) {
-  while(numero<13){
-    console.log(numero);
-    numero++;
-  }
-  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+  var contador=8;
+  var resultado=0;
+  do{
+    resultado+=5;
+    contador-= 1;
+  } while (contador!==0)
+  return resultado + numero;
+  //implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
 }
