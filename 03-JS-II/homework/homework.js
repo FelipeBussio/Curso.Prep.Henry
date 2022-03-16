@@ -45,7 +45,7 @@ if (idioma== 'aleman'){
   return 'Guten Tag!'
 }
 else if (idioma=='mandarin'){
-  console.log('Ni Hao!')
+  return('Ni Hao!')
 }
 else if (idioma== 'ingles'){
   return 'Hello!'
@@ -60,6 +60,19 @@ return 'Hola!'
 }
 
 function colors(color) {
+if (color=='blue'){
+    return 'This is blue'
+}
+else if (color == 'red'){
+  return 'This is red'
+}
+else if (color == 'green'){
+  return 'This is green'
+}
+else if (colo == 'orange'){
+  return 'This is orange'
+}
+return 'Color not found'
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuleve --> "This is blue"
   //En caso que el color recibido sea "red", devuleve --> "This is red"
@@ -70,17 +83,17 @@ function colors(color) {
 }
 
 function esDiezOCinco(numero) {
-if (numero= 10,5){
+if (numero== 10,5){
   return true
-}else {
-return false}
+}
+return false
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
 }
 
 function estaEnRango(numero) {
-  if(20<numero>50){
+  if(20<numero<50){
     return true
   }
   return false
