@@ -25,10 +25,10 @@ return 'Not allowed'
 }
   
 function conection(status) {
-if (status= '1'){
+if (status= 1){
   return 'Online'
 }
-else if (status= '2'){
+else if (status= 2){
   return 'Away'
 } 
 return 'Offline'
@@ -45,7 +45,7 @@ if (idioma= 'aleman'){
   return 'Guten Tag!'
 }
 else if (idioma='mandarin'){
-  return 'Ni Hao!'
+  console.log('Ni Hao!')
 }
 else if (idioma= 'ingles'){
   return 'Hello!'
