@@ -113,14 +113,15 @@ function esEntero(numero) {
 }
 
 function fizzBuzz(numero) {
-  if (numero %3 === 0 ) {
-    return "fizz"
+ if (numero%3===0 || numero%5===0){
+    return "fizzbuzz"
+
   }
   else if (numero%5 ===0){
     return "buzz"
   }
-  else if (numero%3===0 && numero%5===0){
-    return "fizzbuzz"
+  else if (numero %3 === 0 ) {
+    return "fizz"
   }
   return numero
   // Si "numero" es divisible entre 3, devuelve "fizz"
@@ -130,10 +131,10 @@ function fizzBuzz(numero) {
 }
 
 function operadoresLogicos(num1, num2, num3) {
- if (num1,num2,num3 ===0){
+ if (num1===0 || num2===0 || num3===0){
     return "error"
 }
-  else if (num1,num2,num3<0){
+  else if (num1<0 || num2<0 || num3<0){
     return "Hay negativos"
   }
   else if (num1<num3>num2){
