@@ -25,10 +25,10 @@ return 'Not allowed'
 }
   
 function conection(status) {
-if (status= 1){
+if (status== 1){
   return 'Online'
 }
-else if (status= 2){
+else if (status== 2){
   return 'Away'
 } 
 return 'Offline'
@@ -41,13 +41,13 @@ return 'Offline'
 }
 
 function saludo(idioma) {
-if (idioma= 'aleman'){
+if (idioma== 'aleman'){
   return 'Guten Tag!'
 }
-else if (idioma='mandarin'){
+else if (idioma=='mandarin'){
   console.log('Ni Hao!')
 }
-else if (idioma= 'ingles'){
+else if (idioma== 'ingles'){
   return 'Hello!'
 }
 return 'Hola!'
@@ -72,8 +72,8 @@ function colors(color) {
 function esDiezOCinco(numero) {
 if (numero= 10,5){
   return true
-}
-return false
+}else {
+return false}
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
