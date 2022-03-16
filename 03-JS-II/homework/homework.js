@@ -105,13 +105,13 @@ function estaEnRango(numero) {
 function esEntero(numero) {
 if (Math.floor(5)){
   return true
-}
-else if (Math.floor(-20)){
-  return true
-}else if (Math.floor(0)){
-  return true
 }else if (Math.floor(0.5)){
   return false
+
+}else if (Math.floor(0)){
+  return true
+}else if (Math.floor(-20)){
+  return true
 }
  // Devuelve "true" si "numero" es un entero (int/integer)
   // Ejemplo: 0.8 -> false
@@ -207,7 +207,9 @@ function tablaDelSeis(){
 }
 
 function tieneTresDigitos(numero){
-  if (numero.toStirng().length===3){
+  var numerostring=[]
+  numeroString = numero.tostring()
+  if (numero.Stirng.length===3){
     return true
   }
   return false
