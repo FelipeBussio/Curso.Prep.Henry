@@ -21,7 +21,7 @@ function conection(status) {
   if(status = 1) {
     return 'Online';
   }
-  else if(status=2) {
+  if(status=2) {
     return "Away";
   }
   else {
@@ -39,12 +39,12 @@ function saludo(idioma) {
     return 'Guten Tag!';
   }
   else if(idioma='mandarin') {
-    return "Ni Hao!";
+    return 'Ni Hao!';
   }
   else if (idioma='ingles'){
-    return "Hello!";
+    return 'Hello!';
   }
-  else if (idioma=undefined){
+  else if (idioma) {
     return 'Hola!'
   }
   // Devuelve un saludo en tres diferentes lenguajes:
