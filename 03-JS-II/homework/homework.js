@@ -96,9 +96,7 @@ function estaEnRango(numero) {
   if(20<numero<50){
     return true
   }
-  else if (20>numero>50){
   return false
-  }
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -115,6 +113,16 @@ function esEntero(numero) {
 }
 
 function fizzBuzz(numero) {
+  if (numero %3 === 0 ) {
+    return "fizz"
+  }
+  else if (numero%5 ===0){
+    return "buzz"
+  }
+  else if (numero%3===0 && numero%5===0){
+    return "fizzbuzz"
+  }
+  return numero
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
@@ -122,6 +130,19 @@ function fizzBuzz(numero) {
 }
 
 function operadoresLogicos(num1, num2, num3) {
+  if (num2<num1>num3 && num1>0){
+    return "Numero 1 es mayor y positivo"
+  }
+  else if (num1,num2,num3<0){
+    return "Hay negativos"
+  }
+  else if (num1<num3>num2){
+    return num3++
+  }
+  else if (num1,num2,num3 ===0){
+    return "error"
+  }
+  return false
   //La función recibe tres números distintos. 
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
   //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
