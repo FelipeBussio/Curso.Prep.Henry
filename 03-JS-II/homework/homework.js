@@ -25,8 +25,14 @@ return 'Not allowed'
 }
   
 function conection(status) {
+if (status=1){
+  return 'Online'
+}
+else if (status=2){
+  return 'Away'
+} 
+return 'Offline'
 
-  
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
   //Cuando el estado es igual a 2, el usuario está "Away"
