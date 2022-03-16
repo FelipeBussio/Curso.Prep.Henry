@@ -25,10 +25,10 @@ return 'Not allowed'
 }
   
 function conection(status) {
-if (status=1){
+if (status= '1'){
   return 'Online'
 }
-else if (status=2){
+else if (status= '2'){
   return 'Away'
 } 
 return 'Offline'
@@ -41,7 +41,16 @@ return 'Offline'
 }
 
 function saludo(idioma) {
-
+if (idioma= 'aleman'){
+  return 'Guten Tag!'
+}
+else if (idioma='mandarin'){
+  return 'Ni Hao!'
+}
+else if (idioma= 'ingles'){
+  return 'Hello!'
+}
+return 'Hola!'
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
