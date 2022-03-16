@@ -119,7 +119,7 @@ function fizzBuzz(numero) {
   else if (numero%5 ===0){
     return "buzz"
   }
-  else if (numero%3===0 [numero%5===0]){
+  else if (numero%3===0 || numero%5===0){
     return "fizzbuzz"
   }
   return numero
@@ -130,7 +130,7 @@ function fizzBuzz(numero) {
 }
 
 function operadoresLogicos(num1, num2, num3) {
-  if (num2<num1>num3 [num1>0]){
+  if (num1>num2 && num1>num3 && num1>0){
     return "Numero 1 es mayor y positivo"
   }
   else if (num1,num2,num3<0){
