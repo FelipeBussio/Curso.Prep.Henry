@@ -117,10 +117,10 @@ function fizzBuzz(numero) {
     return "fizzbuzz"
 
   }
-  else if (numero%5 ===0){
+  else if (numero%5===0){
     return "buzz"
   }
-  else if (numero %3 === 0 ) {
+  else if (numero %3===0 ) {
     return "fizz"
   }
   return numero
@@ -132,16 +132,16 @@ function fizzBuzz(numero) {
 
 function operadoresLogicos(num1, num2, num3) {
  if (num1===0 || num2===0 || num3===0){
-    return "error"
+    return "Error"
 }
   else if (num1<0 || num2<0 || num3<0){
     return "Hay negativos"
   }
-  else if (num1<num3>num2){
-    return num3++
+  else if (num3>num1 && num3>num2){
+    return (num3+1)
   }
   else if (num1>num2 && num1>num3 && num1>0){
-    return "Numero 1 es mayor y positivo"
+    return "Número 1 es mayor y positivo"
   }
   return false
   //La función recibe tres números distintos. 
