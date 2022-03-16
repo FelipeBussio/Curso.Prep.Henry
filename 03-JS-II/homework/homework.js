@@ -164,10 +164,18 @@ function operadoresLogicos(num1, num2, num3) {
 }
 
 function esPrimo(numero) {
-if (numero%numero===0 && numero%1===0){
+if (numero===2){
   return true
+}else if (numero<2){
+return false
 }
-return 'falso'
+for (var i=2; i < numero ; i++){
+  if (numero%i===0){
+    return false
+  }
+
+}
+return true
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
@@ -176,7 +184,7 @@ return 'falso'
 }
 
 function esVerdadero(valor){
-  if (valor+2==10){
+  if (valor===true){
     return 'Soy verdadero'
   }
   return 'Soy falso'
@@ -199,7 +207,7 @@ function tablaDelSeis(){
 }
 
 function tieneTresDigitos(numero){
-  if (numero.length===3){
+  if (numero.toStirng().length===3){
     return true
   }
   return false
