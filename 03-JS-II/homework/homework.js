@@ -130,18 +130,17 @@ function fizzBuzz(numero) {
 }
 
 function operadoresLogicos(num1, num2, num3) {
-  let isPositive1=Math.sign(num1)
-  if (num1>num2 && num1>num3 && isPositive1===1){
-    return "Numero 1 es mayor y positivo"
-  }
+ if (num1,num2,num3 ===0){
+    return "error"
+}
   else if (num1,num2,num3<0){
     return "Hay negativos"
   }
   else if (num1<num3>num2){
     return num3++
   }
-  else if (num1,num2,num3 ===0){
-    return "error"
+  else if (num1>num2 && num1>num3 && num1>0){
+    return "Numero 1 es mayor y positivo"
   }
   return false
   //La función recibe tres números distintos. 
