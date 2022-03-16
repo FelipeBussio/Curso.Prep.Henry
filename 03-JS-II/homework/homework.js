@@ -60,16 +60,16 @@ return 'Hola!'
 }
 
 function colors(color) {
-if (color=='blue'){
+if (color== 'blue'){
     return 'This is blue'
 }
-else if (color == 'red'){
+else if (color== 'red'){
   return 'This is red'
 }
-else if (color == 'green'){
+else if (color== 'green'){
   return 'This is green'
 }
-else if (colo == 'orange'){
+else if (color== 'orange'){
   return 'This is orange'
 }
 return 'Color not found'
