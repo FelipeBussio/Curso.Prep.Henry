@@ -83,7 +83,7 @@ return 'Color not found'
 }
 
 function esDiezOCinco(numero) {
-if (numero===10 && numero===5){
+if (numero===10 || numero===5){
   return true
 }
 return false
@@ -103,7 +103,17 @@ function estaEnRango(numero) {
 }
 
 function esEntero(numero) {
-  // Devuelve "true" si "numero" es un entero (int/integer)
+if (Math.floor(5)){
+  return true
+}
+else if (Math.floor(-20)){
+  return true
+}else if (Math.floor(0)){
+  return true
+}else if (Math.floor(0.8)){
+  return false
+}
+ // Devuelve "true" si "numero" es un entero (int/integer)
   // Ejemplo: 0.8 -> false
   // Ejemplo: 1 -> true
   // Ejemplo: -10 -> true
@@ -154,6 +164,7 @@ function operadoresLogicos(num1, num2, num3) {
 }
 
 function esPrimo(numero) {
+
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
@@ -162,7 +173,7 @@ function esPrimo(numero) {
 }
 
 function esVerdadero(valor){
-  if (valor>10){
+  if (valor===10){
     return 'Soy verdadero'
   }
   return 'Soy falso'
@@ -172,7 +183,7 @@ function esVerdadero(valor){
 
 }
 
-function tablaDelSeis(){
+function tablaDelSeis(i){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
@@ -190,8 +201,7 @@ function tieneTresDigitos(numero){
 }
 
 function doWhile(numero) {
-  var numero=5
-  while(i<13){
+  while(numero<13){
     console.log(numero);
     numero++;
   }
