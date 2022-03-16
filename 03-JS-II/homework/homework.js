@@ -110,7 +110,7 @@ else if (Math.floor(-20)){
   return true
 }else if (Math.floor(0)){
   return true
-}else if (Math.floor(0.8)){
+}else if (Math.floor(0.5)){
   return false
 }
  // Devuelve "true" si "numero" es un entero (int/integer)
@@ -164,7 +164,10 @@ function operadoresLogicos(num1, num2, num3) {
 }
 
 function esPrimo(numero) {
-
+if (numero%numero===0 && numero%1===0){
+  return true
+}
+return false
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
