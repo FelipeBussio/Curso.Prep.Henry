@@ -83,7 +83,7 @@ return 'Color not found'
 }
 
 function esDiezOCinco(numero) {
-if (numero== 10,5){
+if (numero===10 && numero===5){
   return true
 }
 return false
@@ -93,7 +93,7 @@ return false
 }
 
 function estaEnRango(numero) {
-  if(20<numero<50){
+  if(20<numero && numero<50){
     return true
   }
   return false
@@ -162,6 +162,10 @@ function esPrimo(numero) {
 }
 
 function esVerdadero(valor){
+  if (valor>10){
+    return 'Soy verdadero'
+  }
+  return 'Soy falso'
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
@@ -176,12 +180,21 @@ function tablaDelSeis(){
 }
 
 function tieneTresDigitos(numero){
+  if (numero.length=3){
+    return true
+  }
+  return false
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   
 }
 
 function doWhile(numero) {
+  var numero=5
+  while(i<13){
+    console.log(numero);
+    numero++;
+  }
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
