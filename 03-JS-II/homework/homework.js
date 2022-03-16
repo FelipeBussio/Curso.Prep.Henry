@@ -1,6 +1,13 @@
 // No cambies los nombres de las funciones.
 
 function obtenerMayor(x, y) {
+if (x>y){
+  return x;
+} 
+else if (y>x) {
+  return y;
+}
+return x,y
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
@@ -18,15 +25,8 @@ return 'Not allowed'
 }
   
 function conection(status) {
-  if(status = 1) {
-    return 'Online';
-  }
-  if(status=2) {
-    return "Away";
-  }
-  else {
-    return "Offline";
-  }
+
+  
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
   //Cuando el estado es igual a 2, el usuario está "Away"
@@ -35,18 +35,7 @@ function conection(status) {
 }
 
 function saludo(idioma) {
-  if(idioma='aleman') {
-    return 'Guten Tag!';
-  }
-  else if(idioma='mandarin') {
-    return 'Ni Hao!';
-  }
-  else if (idioma='ingles'){
-    return 'Hello!';
-  }
-  else if (idioma) {
-    return 'Hola!'
-  }
+
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
