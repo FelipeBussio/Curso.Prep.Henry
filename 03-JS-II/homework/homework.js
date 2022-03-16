@@ -113,15 +113,16 @@ function esEntero(numero) {
 }
 
 function fizzBuzz(numero) {
- if (numero%3===0 || numero%5===0){
+ if (numero%3===0 && numero%5===0){
     return "fizzbuzz"
+
+  }
+  else if (numero%3===0 ) {
+    return "fizz"
 
   }
   else if (numero%5===0){
     return "buzz"
-  }
-  else if (numero %3===0 ) {
-    return "fizz"
   }
   return numero
   // Si "numero" es divisible entre 3, devuelve "fizz"
