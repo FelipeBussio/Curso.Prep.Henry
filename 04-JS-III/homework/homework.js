@@ -228,7 +228,7 @@ function breakStatement(numero) {
    for (let i= 0; i< 10; i++) {
   suma = suma +2
   if (suma===i)
-  break
+  break;
   else {
     nuevoarray.push(suma)
   }
