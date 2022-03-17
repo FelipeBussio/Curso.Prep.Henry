@@ -24,7 +24,7 @@ function obtenerLargoDelArray(array) {
 
 function incrementarPorUno(array) {
   for (var i=0 ;i<array.length; i++){
-  console.log(lista(i)+1)
+  console.log(lista[i]+1)
   }
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
@@ -34,6 +34,7 @@ function incrementarPorUno(array) {
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
+  return array
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
@@ -41,6 +42,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
+  return array [array.length]= elemento
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
