@@ -24,8 +24,8 @@ function obtenerLargoDelArray(array) {
 
 function incrementarPorUno(array) {
   var incrementar =[];
-  for (var i=0 ;i<array.length; i++){
-  incrementar[i= array[i]+1]
+  for (var i=0 ; i < array.length ; i++){
+  incrementar[i]= array[i]+1
   }
   return incrementar;
   // "array" debe ser una matriz de enteros (int/integers)
@@ -80,10 +80,10 @@ function arrayContiene(array, elemento) {
 
 function agregarNumeros(numeros) {
 var Suma=0
-for (var i=0; i<numeros.length;i++){
-  suma=suma+numero [i]
+for (var i=0; i < numeros.length ; i++){
+  Suma= Suma + numeros[i]
 }
-return suma
+return Suma
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
@@ -103,10 +103,10 @@ for (let i= 1; i< array.length; i++) {
  if (numeros [i]>maximo);{
    maximo=numeros[i]
  }
- return maximo
+
   
 }
-  
+return maximo
 }
 
 
@@ -141,9 +141,9 @@ function cuentoElementos(arreglo){
     if (arreglo[i]>18){
       cont = cont+1;
     }
-    return cont
     
-  }
+    
+  }return cont
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 
@@ -151,10 +151,10 @@ function cuentoElementos(arreglo){
 
 
 function diaDeLaSemana(numeroDeDia) {
-  if (numeroDeDia===6 || numeroDeDia===7){
-    return 'Es fin de semana'
-  }
-  return 'Es dia laboral'
+if (numeroDeDia===1 || numeroDeDia===7){
+  return 'Es fin de semana'
+}
+return 'Es dia laboral'
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
@@ -172,6 +172,14 @@ function empiezaConNueve(n) {
 
 
 function todosIguales(arreglo) {
+  var td=0
+  for (let i= 0; i< arreglo.length-1 ; i++) {
+    if (arreglo[i]===arreglo[i]){
+      return true
+    }
+    
+  }
+  return false
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
