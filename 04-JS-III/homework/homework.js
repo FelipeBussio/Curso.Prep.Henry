@@ -164,7 +164,7 @@ return 'Es dia laboral'
 
 function empiezaConNueve(n) {
   var string = n.tostring()
-  if (string [0]===9){
+  if (numeroMasGrande.charAT(0)==='9'){
     return true
   }
   return false
@@ -177,7 +177,7 @@ function empiezaConNueve(n) {
 
 function todosIguales(arreglo) {
   var aux = arreglo [0]
-for (let i = 0; i< arreglo.length; i++) {
+for (let i = 1; i< arreglo.length; i++) {
   if (aux!== arreglo[i])
 {return false}  
 }
@@ -209,6 +209,13 @@ function mesesDelAño(array) {
 
 
 function mayorACien(array) {
+  var nuevoarray= []
+  for (let i= 0; i< array.length; i++) {
+    if (array[i]>100){
+      nuevoarray.push(array[i])
+    }
+    return nuevoarray
+  }
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
@@ -216,6 +223,20 @@ function mayorACien(array) {
 
 
 function breakStatement(numero) {
+  var nuevoarray=[]
+    var suma = numero
+   for (let i= 0; i< 10; i++) {
+  suma = suma +2
+  if (suma===i)
+  break
+  else {
+    nuevoarray.push(suma)
+  }
+   } 
+   if (i>10){
+     return 'se interrumpio la ejecucion'
+   }
+   return nuevoarray
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
@@ -227,6 +248,16 @@ function breakStatement(numero) {
 
 
 function continueStatement(numero) {
+  var array=[]
+  var suma=numero
+  for (let i= 0; i< 10; i++) {
+if (suma===5)
+continue;    
+else {
+  suma = suma +2
+  array.push(suma)
+}
+  } return array
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
   //Devolver el array
