@@ -30,11 +30,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-}
+} //!!!!!!!!!
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
-  return array [array.length]= elemento
+  return array.push(elemento);
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
@@ -42,7 +42,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
-  return array [0]= elemento
+  return array.unshift(elemento);
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
@@ -51,6 +51,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
 
 
 function dePalabrasAFrase(palabras) {
+  return palabras [0] + ' ' + palabras [1];
   // "palabras" es un array de strings/cadenas
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
