@@ -9,6 +9,7 @@ function devolverPrimerElemento( array ) {
 
 
 function devolverUltimoElemento(array) {
+  return array [array.length-1]
   // Devuelve el último elemento de un array
   // Tu código:
 }
