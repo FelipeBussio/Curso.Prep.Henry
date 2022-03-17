@@ -1,8 +1,8 @@
 // No cambies los nombres de las funciones.
 
-function devolverPrimerElemento( array =[1,2,3,4] ) {
+function devolverPrimerElemento( array ) {
   
-  array [0]
+  return array [0]
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
 }
