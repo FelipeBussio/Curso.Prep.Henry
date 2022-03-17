@@ -98,15 +98,37 @@ function promedioResultadosTest(resultadosTest) {
 
 
 function numeroMasGrande(numeros) {
-  var maximo =numeros [0]
+var maximo= numeros [0]
+for (let i= 1; i< array.length; i++) {
+ if (numeros [i]>maximo);{
+   maximo=numeros[i]
+ }
+ return maximo
+  
+}
+  
+}
+
 
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-}
+
 
 
 function multiplicarArgumentos() {
+if (arguments.length===0) {
+  return 0;
+} 
+if (arguments.length===1){
+  return arguments [0]
+}
+var prod =1;
+for (let i= 0; i< arguments.length; i++) {
+  prod= prod * arguments[i];
+  
+}
+return prod;
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
@@ -114,6 +136,14 @@ function multiplicarArgumentos() {
 
 
 function cuentoElementos(arreglo){
+  var cont=0
+  for (let i = 0; i< arreglo.length; i++) {
+    if (arreglo[i]>18){
+      cont = cont+1;
+    }
+    return cont
+    
+  }
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 
@@ -121,6 +151,10 @@ function cuentoElementos(arreglo){
 
 
 function diaDeLaSemana(numeroDeDia) {
+  if (numeroDeDia===6 || numeroDeDia===7){
+    return 'Es fin de semana'
+  }
+  return 'Es dia laboral'
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
