@@ -23,9 +23,9 @@ function obtenerLargoDelArray(array) {
 
 
 function incrementarPorUno(array) {
-  var incrementar =1;
+  var incrementar =[];
   for (var i=0 ;i<array.length; i++){
-  incrementar= incrementar+array[i]
+  incrementar[i= array[i]+1]
   }
   return incrementar;
   // "array" debe ser una matriz de enteros (int/integers)
@@ -55,7 +55,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
 
 
 function dePalabrasAFrase(palabras) {
-  return palabras [0] + ' ' + palabras [1];
+  return palabras.join(' ');
   // "palabras" es un array de strings/cadenas
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
@@ -65,6 +65,12 @@ function dePalabrasAFrase(palabras) {
 
 
 function arrayContiene(array, elemento) {
+  for (var i=0; i<array.length ; i++){
+    if (array[i]===elemento){
+      return true
+    }
+  }
+  return false
 
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
@@ -73,7 +79,11 @@ function arrayContiene(array, elemento) {
 
 
 function agregarNumeros(numeros) {
-
+var Suma=0
+for (var i=0; i<numeros.length;i++){
+  suma=suma+numero [i]
+}
+return suma
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
@@ -81,13 +91,15 @@ function agregarNumeros(numeros) {
 
 
 function promedioResultadosTest(resultadosTest) {
-  // "resultadosTest" debe ser una matriz de enteros (int/integers)
+  return agregarNumeros(resultadosTest)/ resultadosTest.length;
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
 }
 
 
 function numeroMasGrande(numeros) {
+  var maximo =numeros [0]
+
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
