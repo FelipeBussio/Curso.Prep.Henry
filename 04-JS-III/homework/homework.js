@@ -23,10 +23,11 @@ function obtenerLargoDelArray(array) {
 
 
 function incrementarPorUno(array) {
+  var incrementar =1;
   for (var i=0 ;i<array.length; i++){
-  console.log(array[i]+1)
+  incrementar= incrementar+array[i]
   }
-  return array;
+  return incrementar;
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
@@ -64,6 +65,7 @@ function dePalabrasAFrase(palabras) {
 
 
 function arrayContiene(array, elemento) {
+
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
@@ -71,6 +73,7 @@ function arrayContiene(array, elemento) {
 
 
 function agregarNumeros(numeros) {
+
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
