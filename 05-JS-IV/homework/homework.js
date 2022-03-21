@@ -18,7 +18,7 @@ function crearGato(nombre, edad) {
 
 
 function agregarPropiedad(objeto, property) {
-  objeto [property]='null'
+  objeto [property]= null
   return objeto
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
   // Devuelve el objeto
@@ -27,7 +27,7 @@ function agregarPropiedad(objeto, property) {
 }
 
 function invocarMetodo(objeto, metodo) {
-objeto.metodo()
+objeto[metodo]()
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
@@ -147,10 +147,10 @@ function sumarLikesDeUsuario(usuario) {
 }
 
 function agregarMetodoCalculoDescuento(producto) {
-  producto[calcularPrecioDescuento]= function(){
+  producto.calcularPrecioDescuento= function(){
     return this.precio - (this.precio * this.porcentajeDeDescuento);
   
-  }
+  };
   return producto;
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
   // Este método debe multiplicar el "precio" del "producto" ("producto.precio" o "producto[precio]") y "porcentajeDeDescuento" para obtener el descuento
