@@ -8,8 +8,8 @@ function crearUsuario() {
     this.contraseña= opciones.contraseña
     }
     Usuario.prototype.saludar= function () {
-      return 'Hola, mi nombre es ' + this.nombre
-    }
+      return 'Hola, mi nombre es ' + this.nombre;
+    };
     return Usuario;
   }
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
@@ -34,9 +34,9 @@ function agregarStringInvertida() {
   String.prototype.reverse=function(){
     var stringinvertida= '';
     for (let i= this.length-1; i>=0; i--) { // this.length - 1--> longitud de la string que vayamos a modificar, como cuenta desde uno el length hay que restarle uno
-      resultado += this [i]                 // ; this se refiere al objeto, vamos de atras para adelante.
+      stringinvertida += this [i]                 // ; this se refiere al objeto, vamos de atras para adelante.
        }
-       return resultado
+       return stringinvertida
   }
   // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.
   // El método debe llamarse "reverse"
